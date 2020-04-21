@@ -4,3 +4,11 @@
 
 @import 'normalize.scss';
 @import 'base.scss';
+@import './helpers/mixins';
+@import './helpers/placeholders';
+@import './helpers/constants.scss';
+@import './fonts';
+
+@import './components/header';
+@import './components/dropdown';
+@import './media/header-media';

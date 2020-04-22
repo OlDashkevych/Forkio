@@ -1,0 +1,45 @@
+@media (min-width: 481px) {
+  .revolutionary {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .revolutionary--title {
+    font-size: 42px;
+  }
+
+  .revolutionary--text {
+    font-size: 21px;
+    margin-top: 38px;
+  }
+
+  .indentation {
+    margin: 0;
+  }
+
+  .revolutionary--icons {
+    width: 768px;
+    justify-content: center;
+    margin-top: 38px;
+    margin-bottom: 100px;
+  }
+
+  .revolutionary--icons__watch {
+    margin-right: 14px;
+  }
+}
+
+@media (min-width: 993px) {
+  .revolutionary {
+    width: 1200px;
+  }
+
+  .revolutionary--text {
+    font-size: 28px;
+  }
+
+  .revolutionary--icons {
+    width: 1200px;
+    margin-bottom: 70px;
+  }
+}

@@ -1,7 +1,5 @@
 @media (min-width: 481px) {
   .revolutionary {
-    width: 768px;
-    margin: 0 auto;
   }
 
   .revolutionary--title {
@@ -18,10 +16,11 @@
   }
 
   .revolutionary--icons {
-    width: 768px;
     justify-content: center;
     margin-top: 38px;
     margin-bottom: 100px;
+    padding: 0;
+    flex-wrap: nowrap;
   }
 
   .revolutionary--icons__watch {
@@ -30,16 +29,12 @@
 }
 
 @media (min-width: 993px) {
-  .revolutionary {
-    width: 1200px;
-  }
-
   .revolutionary--text {
     font-size: 28px;
   }
 
   .revolutionary--icons {
-    width: 1200px;
+    // width: 1200px;
     margin-bottom: 70px;
   }
 }

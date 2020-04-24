@@ -1,0 +1,61 @@
+@media (min-width: 481px) {
+  .aboutfork {
+    padding-top: 76px;
+    background-image: url(../../images/peopleTalkingBg-medium.jpg);
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 80px;
+    }
+
+    &__article {
+      width: 50%;
+      padding-bottom: 40px;
+    }
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__afterText {
+      display: block;
+      margin: 0;
+      margin-top: 34px;
+      padding: 0 20px 16px;
+      opacity: 0.8;
+      @include text-decor(
+        $lato-font,
+        14px,
+        #a291a5cc,
+        center,
+        1.5,
+        unset,
+        bold
+      );
+    }
+  }
+}
+@media (min-width: 993px) {
+  .aboutfork {
+    background-image: url(../../images/peopleTalkingBg-large.jpg);
+
+    &__list {
+      margin-top: 76px;
+    }
+
+    &__article {
+      width: 33%;
+      padding-bottom: 70px;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__afterText {
+      margin-top: 50px;
+    }
+  }
+}

@@ -5,10 +5,11 @@
   background-position: center;
   height: 718px;
   position: relative;
+  margin-bottom: 118px;
 
   &__nav-bar {
     @extend %flex-row;
-    padding: 30px 15px;
+    padding: 30px 0;
     height: 104px;
   }
 
@@ -110,7 +111,6 @@
       unset,
       400
     );
-    padding: 0 22px;
     margin: 8px 0 0;
   }
 
@@ -152,10 +152,6 @@
       color: $violet-color;
       border: 1px solid $violet-color;
     }
-
-    &:active {
-      background-color: $dark-violet-color;
-    }
   }
 
   &__logo {
@@ -186,5 +182,23 @@
 
   &__backgroundTop {
     background-color: #27262a;
+  }
+
+  &__after-title {
+    @include text-decor(
+      $montserrat-font,
+      14px,
+      #848e97,
+      center,
+      1.2,
+      unset,
+      unset
+    );
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
   }
 }

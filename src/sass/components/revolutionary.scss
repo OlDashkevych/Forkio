@@ -1,7 +1,3 @@
-.revolutionary {
-  min-width: 320px;
-}
-
 .revolutionary--title {
   color: #635c73;
   font-size: 26px;
@@ -25,12 +21,13 @@
 
 .revolutionary--icons {
   margin: 0 auto;
-  width: 320px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 34px;
   margin-bottom: 88px;
+  padding: 0 5%;
+  max-width: 410px;
 }
 
 .revolutionary--icons__watch {
@@ -38,24 +35,31 @@
   width: 123px;
   height: 26px;
   align-items: center;
-  border: 1px solid rgba(27, 31, 35, 0.35);
-  border-radius: 4px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 3px;
+  padding-right: 6px;
+  cursor: pointer;
 }
 
 .revolutionary--icons__watch-img {
   width: 80px;
   display: flex;
-  background-color: #e9ecef;
-  border-color: rgba(27, 31, 35, 0.35);
-  box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+  background-color: #eff3f6;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
   justify-content: space-evenly;
   align-items: center;
   font-weight: bold;
   line-height: 1.5;
+  background-size: 110% 110%;
+  border-right: 1px solid rgba(27, 31, 35, 0.2);
+  padding: 0 6px;
+  height: 100%;
 }
 
 .revolutionary--icons__watch-text {
   margin: 0;
+  font-size: 14px;
 }
 
 .revilutionary--icons__watch-number {
@@ -68,4 +72,3 @@
 .indentation {
   margin-top: 22px;
 }
-

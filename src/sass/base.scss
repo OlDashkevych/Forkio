@@ -14,14 +14,20 @@ body {
 }
 
 .container {
-  width: 290px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 481px) {
   .container {
-    width: 728px;
+    max-width: 992px;
     padding: 0 20px;
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 30px;
   }
 }

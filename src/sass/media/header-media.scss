@@ -11,14 +11,14 @@
     }
 
     &__nav-bar {
-      padding: 20px;
       height: 118px;
+      padding: 20px 0 16px;
     }
 
     &__list {
       @include text-decor(
         $montserrat-font,
-        16px,
+        2vw,
         $violet-color,
         left,
         1.2,
@@ -92,30 +92,33 @@
 
     &__button-download {
       font-size: 21px;
-      width: 51%;
       height: 62px;
+      width: 394px;
     }
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .header {
     &__nav-bar {
       height: 96px;
-      padding: 20px 90px;
+      padding: 20px 0;
+      flex-wrap: nowrap;
     }
 
     &__nav {
       width: fit-content;
-      padding-left: 140px;
+      padding-left: 60px;
     }
 
     &__list {
       width: 526px;
+      font-size: 16px;
     }
 
     &__button {
       order: 1;
+      // margin-left: 46px;
     }
 
     &__title {

@@ -1,0 +1,204 @@
+.header {
+  background-image: url(../../images/headerBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 718px;
+  position: relative;
+  margin-bottom: 118px;
+
+  &__nav-bar {
+    @extend %flex-row;
+    padding: 30px 0;
+    height: 104px;
+  }
+
+  &__list {
+    @extend %list-normalize;
+    @include text-decor(
+      $montserrat-font,
+      19px,
+      $white-color,
+      left,
+      1.2,
+      unset,
+      400
+    );
+    padding: 0 15px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 104px;
+    display: none;
+
+    &-item {
+      background-color: #333333;
+      height: 88px;
+      @extend %flex-row;
+      padding-left: 32px;
+      border-bottom: 2px #3b3b3b solid;
+      transition: 200ms linear all;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        color: $violet-color;
+
+        &:before {
+          visibility: visible;
+        }
+      }
+
+      &:before {
+        content: '';
+        height: 52px;
+        width: 8px;
+        background-color: $violet-color;
+        position: absolute;
+        left: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__button {
+    width: 42%;
+    height: 38px;
+    @extend %button-customize;
+    background-color: $violet-color;
+    transition: all 200ms linear;
+    @include text-decor(
+      $montserrat-font,
+      15px,
+      $white-color,
+      center,
+      1.2,
+      unset,
+      bold
+    );
+
+    &:hover {
+      background-color: $white-color;
+      color: $violet-color;
+      border: 1px solid $violet-color;
+    }
+
+    &:active {
+      background-color: $dark-violet-color;
+    }
+  }
+
+  &__title {
+    @include text-decor(
+      $montserrat-font,
+      48px,
+      $white-color,
+      center,
+      1.2,
+      unset,
+      bold
+    );
+    margin: 32px 0 0;
+  }
+
+  &__subtitle {
+    @include text-decor(
+      $montserrat-font,
+      18px,
+      $violet-color,
+      center,
+      1.8,
+      unset,
+      400
+    );
+    margin: 8px 0 0;
+  }
+
+  &__text {
+    @include text-decor(
+      $montserrat-font,
+      14px,
+      $light-gray-color,
+      center,
+      1.4,
+      uppercase,
+      400
+    );
+    margin: 10px 0 0;
+  }
+
+  &__button-download {
+    width: 82%;
+    height: 45px;
+    @extend %button-customize;
+    background-color: $violet-color;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    transition: linear all 200ms;
+    @include text-decor(
+      $montserrat-font,
+      18px,
+      $white-color,
+      center,
+      1.2,
+      unset,
+      bold
+    );
+
+    &:hover {
+      background-color: $white-color;
+      color: $violet-color;
+      border: 1px solid $violet-color;
+    }
+  }
+
+  &__logo {
+    @extend %flex-row;
+    cursor: pointer;
+
+    &-text {
+      display: none;
+      color: inherit;
+      transition: 200ms all linear;
+      padding-left: 60px;
+    }
+
+    &:hover &-text {
+      color: $white-color;
+    }
+    background-image: url(../../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 200ms all linear;
+    width: 42px;
+    height: 42px;
+
+    &:hover {
+      background-image: url(../../images/logo-hover.png);
+    }
+  }
+
+  &__backgroundTop {
+    background-color: #27262a;
+  }
+
+  &__after-title {
+    @include text-decor(
+      $montserrat-font,
+      14px,
+      #848e97,
+      center,
+      1.2,
+      unset,
+      unset
+    );
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+  }
+}

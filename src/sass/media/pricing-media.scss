@@ -1,0 +1,67 @@
+@media (min-width: 481px) {
+
+    .section {
+        height: 100%;
+    }
+
+    .pricing--text {
+        font-size: 42px;
+        padding: 82px 0 47px 0;
+    }
+
+    .pricing--list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pricing--box {
+        margin-left: 104px;
+    }
+
+    .pricing--boxItem {
+        margin-left: 112px;
+    }
+
+    .pricing--listItem__info {
+        font-size: 16px;
+        width: 210px;
+        margin-left: 30px;
+        line-height: 1.7;
+    }
+
+    .pricing--listItem__infoOther {
+        margin-bottom: 80px;
+        margin-left: 42px;
+    }
+
+    .pricing--listItem {
+        margin: 0; 
+        margin-right: 42px;
+        margin-bottom: 40px;
+    }
+
+    .pricing--listItemOther {
+        margin-right: 16px;
+    }
+
+    .addMargin {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 993px) {
+    .pricing--text {
+        padding: 80px 0 70px 0;
+    }
+
+    .pricing--listItem {
+        margin-right: 14px;
+        margin-top: 50px;
+    }
+
+    .pricing--listItemOther {
+        margin-top: 0;
+        margin-bottom: 98px;
+    }
+}

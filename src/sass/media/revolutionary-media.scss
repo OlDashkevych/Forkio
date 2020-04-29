@@ -1,0 +1,39 @@
+@media (min-width: 481px) {
+  .revolutionary {
+  }
+
+  .revolutionary--title {
+    font-size: 42px;
+  }
+
+  .revolutionary--text {
+    font-size: 21px;
+    margin-top: 38px;
+  }
+
+  .indentation {
+    margin: 0;
+  }
+
+  .revolutionary--icons {
+    justify-content: center;
+    margin-top: 38px;
+    margin-bottom: 100px;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+
+  .revolutionary--icons__watch {
+    margin-right: 14px;
+  }
+}
+
+@media (min-width: 993px) {
+  .revolutionary--text {
+    font-size: 28px;
+  }
+
+  .revolutionary--icons {
+    margin-bottom: 70px;
+  }
+}

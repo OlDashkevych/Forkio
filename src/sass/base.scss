@@ -17,6 +17,7 @@ body {
   max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
+  user-select: none;
 }
 
 @media (min-width: 481px) {

@@ -24,12 +24,12 @@
       unset,
       400
     );
+    display: none;
     padding: 0 15px;
     width: 100%;
     position: absolute;
     left: 0;
     top: 104px;
-    display: none;
 
     &-item {
       background-color: #333333;
@@ -201,4 +201,8 @@
     left: 50%;
     transform: translateX(-50%) translateY(50%);
   }
+}
+
+.visible {
+  display: block;
 }
